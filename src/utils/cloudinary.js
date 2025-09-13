@@ -26,3 +26,4 @@ const response =  await  cloudinary.uploader.upload(localFilePath, {
   }
 };
 
+export {uploadOnCloudinary}
