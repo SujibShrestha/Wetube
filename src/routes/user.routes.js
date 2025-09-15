@@ -47,7 +47,7 @@ router.route("/update-account").patch(verifyJWT, updateAccountDetails);
 router
   .route("/avatar")
   .patch(verifyJWT, upload.single("avatar"), updateUserAvatar); // patch for not updating all fields
-
+ 
 router
   .route("/coverImage")
   .patch(verifyJWT, upload.single("coverImage"), updateUserCoverImage);
